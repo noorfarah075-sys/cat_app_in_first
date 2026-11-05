@@ -6,7 +6,7 @@ class GetBreedsUseCase {
   final CatRepository catRepository;
   const GetBreedsUseCase({required this.catRepository});
 
-  Future<Either<String, List<BreedsEntity>>> excute(){
+  Future<Either<String, List<BreedsEntity>>> call(){
     return catRepository.getBreeds();
   }
 }
