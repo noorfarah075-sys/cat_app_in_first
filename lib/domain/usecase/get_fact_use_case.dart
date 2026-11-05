@@ -6,7 +6,7 @@ class GetFactUseCase {
   final CatRepository catRepository;
   const GetFactUseCase({required this.catRepository});
 
-  Future<Either<String, FactEntity>> excute(){
+  Future<Either<String, FactEntity>> call() {
     return catRepository.getFact();
   }
 }
